@@ -19,6 +19,7 @@ def duplicated_counter(content):
 
 
 def run():
+    file = str(input("Podaj ścieżkę do pliku: "))
     with open(file, 'r') as file:
         content = file.read()
     new_content = signs_deleter(content)
